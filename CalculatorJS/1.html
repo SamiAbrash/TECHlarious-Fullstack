@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="2.js"></script>
+    <title>Calculator</title>
+    <style>
+        .text {
+            width: 280px;
+            height: 40px;
+            margin-bottom: 5px;
+            border-radius: 7px;
+        }
+
+        .button {
+            width: 70px;
+            height: 50px;
+            font-size: 20px;
+            border-radius: 7px;
+            background-color: darkcyan;
+        }
+
+        .container {
+            border: 2px solid;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 5px;
+            margin: auto;
+            margin-top: 200px;
+            background-color: darkslategray
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="container">
+        <input type="text" name="op" id="oper" class="text">
+        <br>
+
+
+
+        <table>
+            <tr>
+                <td><input type="button" onclick="getInput('1')" value="1" id="one" class="button"></td>
+                <td><input type="button" onclick="getInput('2')" value="2" id="two" class="button"></td>
+                <td><input type="button" onclick="getInput('3')" value="3" id="three" class="button"></td>
+                <td><input type="button" onclick="Operation('+')" value="+" id="plus" class="button"></td>
+
+
+
+
+            </tr>
+            <tr>
+                <td><input type="button" onclick="getInput('4')" value="4" id="four" class="button"></td>
+                <td><input type="button" onclick="getInput('5')" value="5" id="five" class="button"></td>
+                <td><input type="button" onclick="getInput('6')" value="6" id="six" class="button"></td>
+                <td><input type="button" onclick="Operation('*')"value="*" id="times" class="button"></td>
+
+
+
+
+            </tr>
+            <tr>
+                <td><input type="button" onclick="getInput('7')" value="7" id="seven" class="button"></td>
+                <td><input type="button" onclick="getInput('8')" value="8" id="eight" class="button"></td>
+                <td><input type="button" onclick="getInput('9')" value="9" id="nine" class="button"></td>
+                <td><input type="button" onclick="Operation('/')" value="/ " id="divide" class="button"></td>
+
+
+
+
+
+            </tr>
+
+            <tr>
+                <td><input type="button" onclick="clearCal()" value="c" id="clear" class="button"></td>
+                <td><input type="button" onclick="getInput('0')" value="0" id="zero" class="button"></td>
+                <td><input type="button" onclick="onEqual()" value="=" id="equal" class="button"></td>
+                <td><input type="button" onclick="Operation('-')" value="-" id="minus" class="button"></td>
+
+
+
+
+
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
