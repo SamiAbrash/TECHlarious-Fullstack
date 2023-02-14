@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="1.css">
+    <script src="1.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kill The Monster</title>
+</head>
+<body>
+    <div class="container">
+        <div class="ktmDiv">
+            <h2 class="ktm">Kill The Monster</h2>
+        </div>
+        <br><br> 
+        <center><div class="monsterHealth">
+            <h3>Monster Health</h3>
+            <div class="pStatus1" id="pStatus1">
+                <div class="pBar1" id="pBar1"></div>
+            </div>
+        </div></center>
+
+        <br><br>
+        
+        <center><div class="yourHealth">
+            <h3>Your Health</h3>
+            <div class="pStatus2">
+                <div class="pBar2" id="pBar2"></div>
+            </div>
+        </div></center>
+
+        <br><br>
+
+        <center>
+        <table class="btnTable">
+            <tr>
+                <td><input type="button" value="Attack" id="attack" onclick="attack()"></td>
+                <td><input type="button" value="Special Attack" id="sattack" onclick="sattack()"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Heal" id="heal" onclick="heal()"></td>
+                <td><input type="button" value="Give UP" id="giveup" onclick="giveup()"></td>
+            </tr>
+        </table>
+        </center>
+
+    </div>
+</body>
+</html>
